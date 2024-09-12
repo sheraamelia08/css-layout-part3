@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #FFF;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            position: relative;
+            background-color: #DEB887;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px; /* Tentukan tinggi seragam */
+            object-fit: cover; /* Menjaga proporsi gambar */
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+            transition: transform 0.3s ease; /* Efek transisi untuk zoom saat hover */
+        }
+
+        .grid-item img:hover {
+            transform: scale(1.05); /* Efek zoom saat gambar di-hover */
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Koleksi Foto Stok Trending</h1>
+    <div class="gallery">
+        <figure class="grid-item">
+            <img src="gunung.jpeg" alt="gunung">
+            <figcaption>Gunung Yang Menjunjung Tinggi</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="laut.jpeg" alt="laut">
+            <figcaption>Gelombang Air Laut Yang Biru</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="rumah.jpg" alt="rumah">
+            <figcaption>Rumah Alam</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="air-terjun-ntt.jpeg" alt="air terjun">
+            <figcaption>Air Terjun Yang Menyegarkan</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="danaujpeg.jpeg" alt="danau">
+            <figcaption>Air Danau Menenangkan Hati</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="bukit rumput.jpeg" alt="bukit">
+            <figcaption>Konten Eksklusif dari Bengkel Kreator</figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>
